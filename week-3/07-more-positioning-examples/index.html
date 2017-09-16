@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <style>
+
+      div{
+        padding: 20px;
+        /*width: 100px;*/
+        font-size: 24px;
+        height: 50px;
+      }
+
+      .static{
+        border: 4px solid limegreen;
+      }
+
+      .relative{
+        border: 4px solid pink;
+        position: relative;
+        top: -20px;
+        left: 20px;
+      }
+
+      .absolute{
+        border: 4px solid orangered;
+        position: absolute;
+        bottom: 20px;
+      }
+
+      .fixed {
+        border: 4px solid skyblue;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .parent {
+        height: 400px;
+        width: 800px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="static">
+      I'm static!
+    </div>
+
+    <div class="relative">
+      I'm relative!
+    </div>
+    <div class="fixed">
+      I'm fixed!
+    </div>
+
+    <div class="absolute">
+      I'm absolute!
+    </div>
+
+    <div class="relative parent">
+      <div class="absolute">
+        I'm absolute within a relative div!
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

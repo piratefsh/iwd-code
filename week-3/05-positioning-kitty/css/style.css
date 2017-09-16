@@ -1,21 +1,21 @@
 .room{
   background-image: url('../img/room.jpg');
-  width: 964px;
-  height: 643px;
+  width: 831px;
+  height: 558px;
   background-size: cover;
   position: relative;
 }
 
 .kitty {
-  transaction: all 0.3s;
+  transition: all 0.3s;
   width: 140px;
-  background-size: contain;
-  background-repeat: no-repeat;
 
   /* COMPLETE CHALLENGES HERE*/
   position: absolute;
   bottom: 0px;
-  left: 40px;
+  // left: 700px;
+  left: 70px;
+  z-index: 1;
 }
 
 .plant{
@@ -23,9 +23,13 @@
   background-repeat: no-repeat;
   width: 190px;
   position: absolute;
-  right: 20px;
-  bottom: 30px;
+  right: 40px;
+  bottom: 25px;
 
   /* Check it out! I wonder what this does... */
-  z-index: 0;
+  z-index: 2;
+}
+
+.kitty, .plant {
+  border: 2px solid red;
 }

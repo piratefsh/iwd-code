@@ -1,0 +1,115 @@
+
+article, header, nav, section, aside, footer, .container{
+  border: 2px solid lightgrey;
+  padding: 10px;
+  margin: 5px;
+  font-family: Arial, sans-serif;
+  color: #555555;
+  box-sizing: border-box;
+}
+
+header{
+  border-color: salmon;
+}
+
+section{
+  border-color: plum;
+}
+
+footer{
+  border-color: darkmagenta;
+}
+
+aside {
+  border-color: orange;
+}
+
+article{
+  border-color: cornflowerblue;
+}
+
+nav {
+  border-color: seagreen;
+}
+
+
+/* Layout styles */
+#logo {
+  width: 80px;
+}
+
+header nav {
+  float: right;
+}
+
+@media(max-width: 768px){
+  header nav {
+    float: none;
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 16px;
+}
+
+nav ul {
+  padding-left: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+article {
+  width: 100%;
+  float: left;
+}
+
+@media(min-width: 769px){
+  article{
+    max-width: 500px;
+  }
+}
+
+aside{
+  width: 200px;
+  float: right;
+}
+
+/* mobile: max-width: 480px */
+/* tablet: max-width: 768px */
+/* desktop: min-width: 1280px */
+
+@media(max-width: 768px) {
+  aside{
+    width: 100%;
+  }
+}
+
+footer {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
