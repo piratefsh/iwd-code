@@ -7,15 +7,11 @@
 }
 
 .kitty {
-  transition: all 0.3s;
   width: 140px;
 
   /* COMPLETE CHALLENGES HERE*/
   position: absolute;
-  bottom: 0px;
-  // left: 700px;
-  left: 70px;
-  z-index: 1;
+  bottom: 0;
 }
 
 .plant{
