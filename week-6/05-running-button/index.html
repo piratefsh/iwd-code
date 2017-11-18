@@ -1,0 +1,50 @@
+<html>
+  <head>
+
+
+    <style>
+      #my-button{
+        padding: 40px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Running Button</h1>
+
+
+    <button id="my-button">Click me</button>
+    <script>
+
+      //select my-button
+      const btn = document.querySelector("#my-button");
+      // counter to keep track of clicks
+      let count = 0;
+
+      //add event handler
+      btn.onmouseover = function(){
+        console.log('hover', count, 'times');
+
+        // if have hovered less than 5 times, then move btn
+        if(count < 5){
+          // move button by setting position
+          btn.style.position = 'fixed';
+          const randomTop = Math.random() * 500;
+          const randomLeft = Math.random() * 500;
+          btn.style.top = randomTop + 'px';
+          btn.style.left = randomLeft + 'px';
+
+          // add on number of clicks
+          count = count + 1;
+        }
+      }
+
+      btn.onclick = function(){
+        window.alert('congrats!')
+      }
+
+    </script>
+
+  </body>
+</html>

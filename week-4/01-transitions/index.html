@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 30px;
+        background-color: #333333;
+      }
+
+      .center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .button {
+        background-color: yellow;
+        color: black;
+        padding: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 2px solid orangered;
+        border-right: 2px solid orangered;
+        display: inline-block;
+        transition: all 1s;
+      }
+
+      .button:hover {
+        background-color: rebeccapurple;
+        color: #FFFFFF;
+        border-color: purple;
+        transform: skew(30deg);
+      }
+
+      @keyframes pulse {
+        0% {
+          background-color: red;
+          color: blue;
+        }
+
+        50% {
+          background-color: blue;
+          color: red;
+        }
+
+        100% {
+          background-color: red;
+          color: blue;
+        }
+      }
+
+      .chill-disco{
+        background-color: white;
+        width: 400px;
+        height: 400px;
+        font-size: 60px;
+        /*animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: 10;*/
+
+        animation: pulse 2s 10;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <section class="center">
+      <div class='chill-disco'>
+        chill disco
+      </div>
+
+      <a href="http://example.com"
+        class="button">
+        Give me cats
+      </a>
+    </section>
+  </body>
+</html>

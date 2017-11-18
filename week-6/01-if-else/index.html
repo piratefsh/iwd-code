@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to JavaScript</title>
+</head>
+
+<body>
+  <h1>If-else</h1>
+
+  <script>
+    // 0 Sunday
+    // 1 Monday
+    // 2 Tuesday
+    // 3 Wednesday
+    // 4 Thursday
+    // 5 Friday
+    // 6 Saturday
+
+    const date = new Date();
+    const today = date.getDay();
+    document.write('Today is ' + today + '<br/>')
+
+    if(today == 6){
+      document.write('I get ice cream!')
+    }
+    else if (today == 2) {
+      document.write('Taco Tuesdays!')
+    }
+
+    else if (today == 3) {
+      document.write('Chicken rice day!')
+    }
+    else if (today == 4) {
+      document.write('Nom nom nachos')
+    }
+    else{
+      document.write('I eat cookies!')
+    }
+
+  </script>
+
+</body>
+</html>

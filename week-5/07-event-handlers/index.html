@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to JavaScript</title>
+  <style>
+    button {
+      padding: 20px;
+      background-color: deeppink;
+      color: white;
+      border-radius: 8px;
+      border: 1px solid pink;
+      font-size: 36px;
+    }
+
+    .mouseovered{
+      color: black;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <button id='my-button'>Click me ;) </button>
+
+  <p>This button has been clicked
+    <span id="click-count">0</span> times</p>
+
+  <script>
+    function randomColor(){
+      const r = Math.floor(Math.random() * 255);
+      const g = Math.floor(Math.random() * 255);
+      const b = Math.floor(Math.random() * 255);
+      return 'rgb(' + r + ',' + g + ',' + b + ')'
+    }
+
+    // JavaScript goes here
+    const button = document.getElementById('my-button');
+    const countSpan = document.getElementById('click-count')
+
+    let clickCount = 0;
+
+    button.onclick = function () {
+      clickCount = clickCount + 1;
+      countSpan.innerHTML = clickCount;
+
+      button.style.backgroundColor = randomColor();
+      console.log('clicked', clickCount);
+    }
+
+    button.onmouseover = function () {
+      button.classList.add('mouseovered')
+      console.log('mouseover!')
+    }
+
+    button.onmouseout =function(){
+      button.classList.remove('mouseovered')
+    }
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

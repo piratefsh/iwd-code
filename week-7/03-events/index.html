@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Features</title>
+</head>
+
+<body>
+  <h1>Events</h1>
+
+  <a href="#" id="link-out">
+    Link out example
+  </a>
+
+  <ul id="my-list">
+    <li class="i1">item 1</li>
+    <li class="i2">item 2</li>
+    <li class="i3">item 3</li>
+  </ul>
+
+  <script>
+
+    function randomColor(){
+      const r = Math.floor(Math.random() * 255);
+      const g = Math.floor(Math.random() * 255);
+      const b = Math.floor(Math.random() * 255);
+      return 'rgb(' + r + ',' + g + ',' + b + ')'
+    }
+
+    const myList = document.getElementById('my-list');
+    console.log(myList.children);
+
+    for(let i = 0; i < myList.children.length; i++){
+      const li = myList.children[i];
+
+      li.onclick = function(event){
+        console.log(event.target);
+        event.target.parentElement.style.backgroundColor = randomColor();
+        event.target.style.backgroundColor = randomColor();
+      }
+    }
+
+  </script>
+</body>
+</html>

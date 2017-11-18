@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Quote of the Day</title>
+</head>
+
+<body>
+  <h1>Quote of the moment</h1>
+  <section>
+    <h2>Quote</h2>
+    <blockquote id="display-quote">
+      Nothing here
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Submit Quote</h2>
+    <form
+      action="http://127.0.0.1:3000/quotes/submit"
+      method="POST"
+      >
+      <label for="quote-field">Submit a quote:</label>
+      <input id="quote-field" type="text" name="quote" />
+      <input type="submit" />
+
+    </form>
+  </section>
+  <script type="text/javascript">
+
+    fetch('http://127.0.0.1:3000/quotes/random').then(function(response){
+      return response.json()
+    }).then(function(body){
+      console.log(body)
+      document.getElementById('display-quote').innerHTML = body.random_quote;
+    })
+  </script>
+</body>
+</html>

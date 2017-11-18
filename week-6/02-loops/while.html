@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to JavaScript</title>
+</head>
+
+<body>
+  <h1>While loops</h1>
+
+  <script>
+
+    let names = ['Colin', 'Audrey', 'Delilah', 'Josh', 'Mack'];
+
+    let count = 0;
+    let foundRoom = -1;
+    const nameToFind = 'Delilah'
+
+    while( count < names.length ) {
+      greet(names[count]);
+
+      // if name matches targeted name
+      if(names[count] == nameToFind) {
+
+        // update foundRoom
+        foundRoom = count;
+
+        // break out of loop
+        break;
+      }
+
+      count = count + 1;
+    }
+
+    document.write(nameToFind + ' is in room ' + foundRoom);
+
+    function greet(name){
+      document.write('Good morning ' + name + '<br/>')
+    }
+  </script>
+
+</body>
+</html>

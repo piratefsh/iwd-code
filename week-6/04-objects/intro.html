@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to JavaScript</title>
+</head>
+
+<body>
+  <h1>Objects</h1>
+
+  <script>
+
+    function sneeze(){
+      document.write(this.name)
+      document.write(' goes ah choo!<br/>')
+    }
+
+    const sherMinn = {
+      name: 'Sher Minn Chong',
+      age: 18,
+      hungry: false,
+      greet: function(){
+        document.write('hello friend!!')
+      },
+      sneeze: sneeze,
+    }
+
+    const audrey = {
+      name: 'Audrey Ling',
+      age: 21,
+      hungry: true,
+      eyeColor: 'brown',
+      sneeze: sneeze,
+    }
+
+    console.log(sherMinn.sneeze)
+    console.log(audrey.sneeze)
+
+    audrey.sneeze()
+    sherMinn.sneeze()
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to JavaScript</title>
+</head>
+
+<body>
+  <h1>For loops</h1>
+
+  <script>
+
+    let names = ['Colin', 'Audrey', 'Delilah', 'Josh', 'Mack'];
+
+    let longestName = '';
+
+    for(let i = 0; i < names.length; i++){
+      const currentName = names[i];
+      if(currentName.length > longestName.length){
+        longestName = currentName;
+      }
+    }
+
+    document.write('longest name is ' + longestName)
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Features</title>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <h1>Interactive Image Gallery</h1>
+
+  <!-- Gallery here -->
+  <ul class="gallery">
+    <li class="gallery-item">
+      <img src="./images/marina-bay.jpg" />
+      <p class="caption">Marina Bay Sands Skyline in Singapore.</p>
+    </li>
+
+    <li class="gallery-item">
+      <img src="./images/cbd.jpg" />
+      <p class="caption">Central Business District in Singapore.</p>
+    </li>
+
+    <li class="gallery-item">
+      <img src="./images/new-york.jpg" />
+      <p class="caption">Roosevelt Tramway view in NYC.</p>
+    </li>
+
+    <li class="gallery-item">
+      <img src="./images/bukit-tabur.jpg" />
+      <p class="caption">View from Bukit Tabur in Malaysia</p>
+    </li>
+  </ul>
+
+
+  <!-- Lightbox here -->
+  <div class="lightbox hidden">
+
+    <div class="lightbox-content">
+      <div class='lightbox-controls'>
+        <a href="" class="lightbox-close">Close</a>
+        <a href="#" class="lightbox-prev">Prev</a>
+        <a href="#" class="lightbox-next">Next</a>
+      </div>
+
+      <div class='lightbox-image'>
+        <img src="./images/new-york.jpg" />
+        <p class="caption">Roosevelt Tramway view in NYC.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>

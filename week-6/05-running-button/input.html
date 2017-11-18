@@ -1,0 +1,36 @@
+<html>
+  <head>
+
+
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Inputs</h1>
+
+    <input id="user-input" type="text"/>
+    <button>ok</button>
+
+    <script>
+      const user = document.getElementById('user-input');
+      console.log(user);
+
+      user.onchange = function(){
+        console.log(user.value)
+
+        const regex = /[^0-9]/g
+
+        if(regex.test(user.value)){
+          console.log('invalid')
+        }
+        else{
+          console.log('valid')
+        }
+      }
+
+    </script>
+
+  </body>
+</html>

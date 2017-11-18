@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to JavaScript</title>
+</head>
+
+<body>
+  <h1>Finding the longest name</h1>
+
+  <script>
+
+    // Finding the longest name
+
+    let names = ['Colin','Siti Nurhaliza', 'Audrey', 'Delilah', 'Josh', 'Rumplestiltskin', 'Mack'];
+
+    let count = 0;
+    let longestName = '';
+
+    while( count < names.length ) {
+      const currentName = names[count]
+
+      // check if current name is longer than longest name so far
+      if(currentName.length > longestName.length){
+        // if it is, then update longest name
+        longestName = currentName;
+      }
+
+      // show name
+      greet(names[count]);
+
+      // update counter
+      count = count + 1;
+    }
+    document.write('<hr/>')
+    document.write('longest name is ' + longestName)
+
+    function greet(name){
+      document.write('Good morning ' + name + '<br/>')
+    }
+  </script>
+
+</body>
+</html>

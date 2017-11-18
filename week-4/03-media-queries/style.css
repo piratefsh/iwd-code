@@ -1,0 +1,25 @@
+
+/* mobile behavior (default) */
+section {
+  border: 1px solid red;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* desktop behavior */
+@media(min-width: 768px){
+  section {
+    border: 1px solid blue;
+    display: inline-block;
+    width: 50%;
+    float: left;
+  }
+}
+
+header{
+  font-size: 50px;
+}
+
+body{
+  color: blue;
+}

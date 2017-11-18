@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to JavaScript</title>
+</head>
+
+<body>
+  <h1>Arrays</h1>
+
+  <script>
+
+    const quotes = [
+      "A ship in port is safe, but that's not what ships are built for.",
+      "A smile is the shortest distance between two people.",
+      "Life is a great big canvas; throw all the paint on it you can.",
+      "Not even computers will replace committees, because committees buy computers."
+    ];
+
+    const random = Math.random();
+    const randomIndex = Math.floor(random * quotes.length);
+    document.write(randomIndex + ' : ')
+    document.write(quotes[randomIndex])
+  </script>
+
+</body>
+</html>
